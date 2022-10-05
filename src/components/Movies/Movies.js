@@ -1,22 +1,43 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import {Routes, Route} from 'react-router-dom'
+
 import MoviesNavBar from './MoviesNavBar'
+import MovieItem from './MovieItem'
 import Popular from './Popular'
-import TopRated from './TopRated'
-import Upcoming from './Upcoming'
+
 
 
 const Movies = () => {
+
+  const [movieType, setMovieType] = useState("popular");
+  const [movieData, setMovieData] = useState([]);
+  
+  const fetchMovies = () => {
+    fetch(
+      `https://api.themoviedb.org/3/movie/${movieType}?api_key=15e383204c1b8a09dbfaaa4c01ed7e17&language=en-US&page=1`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setMovieData(data.results)
+      });
+      
+  };
+  useEffect(() => {
+    fetchMovies();
+  }, [movieType]);
+
   return (
     
    <>
 
-    <MoviesNavBar />
+    <MoviesNavBar setMovieType={setMovieType}/>
             
       <Routes>
-        <Route path='/popular' element={<Popular />}></Route>
-        <Route path='/toprated' element={<TopRated />}></Route>
-        <Route path='/upcoming' element={<Upcoming />}></Route>
+        <Route path='/*' element={<Popular movieData={movieData} />}></Route>
+        <Route
+            path="/:movieId"
+            element={<MovieItem movieData={movieData} />}
+          />
       </Routes>
             
     </>

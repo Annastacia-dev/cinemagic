@@ -12,9 +12,7 @@ function App() {
       <MainNavBar />
 
       <Routes>
-        <Route path="/movies/*" element={<Movies />} />
-        
-
+        <Route exact='true' path="/*" element={<Movies />} />  
       </Routes>
       
     </div>

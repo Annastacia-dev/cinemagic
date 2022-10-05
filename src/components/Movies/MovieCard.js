@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const MovieCard = ({poster_path, title, id}) => {
 
     const posterUrl = (posterpath) => {
@@ -11,7 +12,7 @@ const MovieCard = ({poster_path, title, id}) => {
   return (
     <li>
     <div className='movie-card'>
-        <Link to={`/movieitem/${id}`}><img src={posterUrl(poster_path)} alt={title} /></Link>
+        <Link to={`/${id}`}><img src={posterUrl(poster_path)} alt={title} /></Link>
       </div>
     </li>
   )
