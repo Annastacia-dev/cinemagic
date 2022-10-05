@@ -17,9 +17,13 @@ const MovieList = () => {
 
 
   return (
-    <div>
+    <div className='movie-container'>
         {movies.map(movie => (
+
+            <>
             <MovieCard key={movie.id} {...movie} />
+            </>
+            
         ))}
         </div>
   )
