@@ -65,10 +65,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 52rem;
+    padding-right: 55rem;
     margin-bottom: -50px;
     color: red;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -104,8 +104,13 @@ body{
     object-fit: cover;
 }
 
+/* Dropdown */
+
+.dropdown{
+    margin-top: 10px;
+}
+
 label{
-    display: block;
     margin: 10px;
     padding: 5px 10px;
     font-size: 1.2rem;
@@ -114,8 +119,8 @@ label{
 }
 
 select{
-    width: 20%;
-    height: 40px;
+    width: 15%;
+    height: 30px;
     border: none;
     outline: none;
     border-radius: 2px;
