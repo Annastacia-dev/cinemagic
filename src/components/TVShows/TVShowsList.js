@@ -17,15 +17,18 @@ const TVShowsList = () => {
 
 
   return (
-    <div className='movie-container'>
-        {tvShows.map(show => (
+    <div>
+        <h3 className='category-title'>popular on cinemagic</h3>
+            <div className='movie-container'>
+                {tvShows.map(show => (
 
-            <>
-            <TVShowsCard key={show.id} {...show} />
-            </>
-            
-        ))}
-        </div>
+                    <>
+                    <TVShowsCard key={show.id} {...show} />
+                    </>
+                    
+                ))}
+                </div>
+    </div>
   )
 }
 

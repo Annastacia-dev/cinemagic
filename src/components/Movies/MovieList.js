@@ -17,15 +17,18 @@ const MovieList = () => {
 
 
   return (
-    <div className='movie-container'>
-        {movies.map(movie => (
+    <div>
+      <h3 className='category-title'>popular on cinemagic</h3>
+        <div className='movie-container'>
+            {movies.map(movie => (
 
-            <>
-            <MovieCard key={movie.id} {...movie} />
-            </>
-            
-        ))}
-        </div>
+                <>
+                <MovieCard key={movie.id} {...movie} />
+                </>
+                
+            ))}
+            </div>
+    </div>
   )
 }
 

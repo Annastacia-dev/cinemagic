@@ -8,9 +8,11 @@ const MovieCard = ({poster_path, title}) => {
 
 
   return (
+    <li>
     <div className='movie-card'>
         <img src={posterUrl(poster_path)} alt={title} />
     </div>
+    </li>
   )
 }
 
