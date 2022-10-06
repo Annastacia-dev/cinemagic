@@ -102,13 +102,13 @@ body{
    padding: 70px;
    text-decoration: none;
    text-transform: uppercase;
-   color: #000;
+   color: red;
    font-size: 0.9rem;
    font-weight: 600;
 }
 
 .movies-navbar nav ul li a:hover{
-    color: red;
+    color: #000;
     transition: 0.2s ease-in-out;
 }
 
@@ -199,7 +199,7 @@ select{
 }
 
 .movie-item-info h2{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: -300px;
     padding-left: 80px;
     text-transform: uppercase;
@@ -226,5 +226,13 @@ select{
 }
 #overview{
     width: 50%;
+}
+
+#like-icon{
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: #fff;
+    
 }
 

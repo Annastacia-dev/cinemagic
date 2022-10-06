@@ -1,12 +1,18 @@
 import React, {useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { BsSuitHeart} from 'react-icons/bs'
 
 const MovieItem = ({ movieData }) => {
 
     const params = useParams()
     const [likes, setLikes] = useState([])
+    const [reviews, setReviews] = useState([])
+
+// LIKES
 
     function handleLikes (){
+
+      // 1. POST request to /api/movies/:id/likes
       fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/siGq1PtrcqnZLW01zbcb/likes/',{
         method: 'POST',
         headers: {
@@ -17,11 +23,32 @@ const MovieItem = ({ movieData }) => {
         })
 
       })
-      .then(response => response.json())
+      .then(response => response.text())
       .then(data => {
-        console.log('Success:', data);
+        console.log(data);
       })
     }
+
+    // 2. GET request to /api/movies/:id/likes
+
+   useEffect(() => {
+
+    fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/siGq1PtrcqnZLW01zbcb/likes/')
+    .then(response => response.json())
+    .then(data => {
+      data.map(like => 
+        like.item_id === params.movieId ? setLikes(like.likes) : null
+    )})
+
+   },[likes])
+
+
+  //  REVIEWS
+
+
+    
+
+    
 
     
     return (
@@ -51,11 +78,21 @@ const MovieItem = ({ movieData }) => {
                 <p>Release Date: {movie.release_date}</p>
                 <p>Rating: {movie.vote_average}</p>
                 <span>
-                  <button onClick={handleLikes}>Like</button>
+                  <button id='like-icon' onClick={handleLikes}><BsSuitHeart/></button>
                 </span>
                 <span>
-                  <p>0 likes</p>
+                  <p>{likes} likes</p>
                 </span>
+                <div className='reviews'>
+                  <input type='text' placeholder='Add a review'></input>
+                  <button>post</button>
+                  <ul>
+                    <li>
+                      <p>Review</p>
+                    </li>
+                  </ul>
+
+                </div>
                 </div>
                 
 
