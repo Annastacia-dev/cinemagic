@@ -8,7 +8,7 @@ const MainNavBar = () => {
         <nav>
             <ul>
                 <li>
-                    <NavLink end to="/*">Movies</NavLink>
+                    <NavLink end to="/">Movies</NavLink>
                 </li>
                
             </ul>
