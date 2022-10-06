@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@400;700;900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +16,27 @@ body{
    
 }
 
+/* Logo */
+#nav-logo{
+    display: inline-block;
+
+}
+#logo{
+    margin-left: -500px;
+    font-family: 'Aclonica', sans-serif;
+    text-transform: capitalize;
+}
+
+#logo-img{
+    width: 0%;
+    
+}
+
+
+
+
 /* MainNavBar */
+
 
 .main-navbar{
     display: flex;
@@ -41,6 +65,7 @@ body{
 .main-navbar nav ul li a{
    text-decoration: none;
    text-transform: uppercase;
+   padding-left: 20px;
    color: red;
    font-size: 1.2rem;
    font-weight: 600;
@@ -57,6 +82,12 @@ body{
     color: red;
     padding: 1px;
     transition: 0.5s;
+}
+
+.main-navbar nav ul li a img .active{
+    border-bottom: none;
+    border-top: none;
+    
 }
 
 /* Movie List */

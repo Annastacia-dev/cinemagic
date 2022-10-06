@@ -6,8 +6,8 @@ const Popular = ({ movieData }) => {
 
     return (
         <>
-        <div>
-            <div className='movie-container'>
+        <div >
+            <div className='movie-container' >
                 {movieData.map(movie => (
                     <> 
                       <MovieCard key={movie.id} {...movie} />       

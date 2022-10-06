@@ -11,6 +11,7 @@ export const cards = [
     {
       id: "1",
       image: amsterdam,
+      title: "Amsterdam",
     },
     {
       id: "2",

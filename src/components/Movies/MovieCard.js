@@ -10,7 +10,7 @@ const MovieCard = ({poster_path, title, id}) => {
 
 
   return (
-    <li>
+    <li  key={id}>
     <div className='movie-card'>
         <Link to={`/${id}`}><img src={posterUrl(poster_path)} alt={title} /></Link>
       </div>

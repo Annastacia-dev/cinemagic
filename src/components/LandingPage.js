@@ -24,6 +24,7 @@ const LandingPage= () => {
   return (
     <div className="App">
       <div className="carousel">
+      <h2>We only have the best films</h2>
         {cards.map((item, i) => {
           const indexLeft = mod(index - 1, cards.length);
           const indexRight = mod(index + 1, cards.length);
@@ -39,12 +40,15 @@ const LandingPage= () => {
           } else className = "card";
 
           return (
+            <>
             <img
               key={item.id}
               className={className}
               src={item.image}
-              alt="Comic"
+              alt="movie"
             ></img>
+            </>
+            
           );
         })}
       </div>

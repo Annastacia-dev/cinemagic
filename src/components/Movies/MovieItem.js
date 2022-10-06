@@ -99,10 +99,7 @@ const MovieItem = ({ movieData }) => {
 
    
    },[])
-
-   console.log(reviews)
-
-    
+     
     return (
       
         <div>
@@ -161,7 +158,7 @@ const MovieItem = ({ movieData }) => {
                         <>
                         <div>
                         <p>Review by <b>@{review.username}</b></p>
-                        <quote>"{review.comment}"</quote>
+                        <quote>" {review.comment} "</quote>
                         </div>
                         
 

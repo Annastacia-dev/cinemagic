@@ -12,6 +12,15 @@
     height: 100%;
     position: relative;
   }
+
+  .carousel h2{
+    text-transform: capitalize;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: 'Aclonica', sans-serif;
+  }
   
   .card {
     position: absolute;
