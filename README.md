@@ -17,6 +17,10 @@ They Show the top rated movies of all time.
 Latest Movies
 They Show the latest movies.
 
+By Default the Popular Movies page is displayed.
+Click on the Top Rated  or Latest  to view the movies in those categories.
+Cinemagic  displays a carousel of movies playing in cinema.
+
 # FEATURES
 - Users can view the most popular movies.
 - Users can view the top rated movies.

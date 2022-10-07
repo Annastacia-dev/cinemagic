@@ -11,7 +11,7 @@ const Popular = ({ movieData }) => {
 
     return (
         <>
-        <div >
+        <div>
             <div className='search'>
                 <input 
                 type="text" 

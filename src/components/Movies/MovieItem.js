@@ -49,7 +49,7 @@ const MovieItem = ({ movieData }) => {
         like.item_id === params.movieId ? setLikes(like.likes) : null
     )})
 
-   },[likes])
+   },[params.movieId])
 
 
   //  REVIEWS
@@ -98,7 +98,7 @@ const MovieItem = ({ movieData }) => {
     })
 
    
-   },[])
+   },[params.movieId])
      
     return (
       

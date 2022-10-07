@@ -11,8 +11,8 @@ const Movies = () => {
 
   const [movieType, setMovieType] = useState("popular");
   const [movieData, setMovieData] = useState([]);
-  
-  const fetchMovies = () => {
+
+  useEffect(() => {
     fetch(
       `https://api.themoviedb.org/3/movie/${movieType}?api_key=15e383204c1b8a09dbfaaa4c01ed7e17&language=en-US&page=1`
     )
@@ -21,9 +21,6 @@ const Movies = () => {
         setMovieData(data.results)
       });
       
-  };
-  useEffect(() => {
-    fetchMovies();
   }, [movieType]);
 
   return (
