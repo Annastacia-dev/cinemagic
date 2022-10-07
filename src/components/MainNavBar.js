@@ -10,7 +10,7 @@ const MainNavBar = () => {
                 <li>
                  <div id='nav-logo'><NavLink id='logo' end to ='/home'> 
                  <img id='logo-img' alt='' src={logo}></img>
-                  cinemagic </NavLink></div>
+                    cinemagic </NavLink></div>
                     <NavLink end to="/">Movies</NavLink>
                 </li>
                

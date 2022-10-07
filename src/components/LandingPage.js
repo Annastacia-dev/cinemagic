@@ -18,7 +18,7 @@ const LandingPage= () => {
     setTimeout(() => {
       setIndex((index + 1) % cards.length);
       console.log(index);
-    }, 3000);
+    }, 2000);
   }, [index]);
 
   return (
