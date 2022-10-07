@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cinemagic/static/css/main.316ddb3e.css",
+    "main.js": "/cinemagic/static/js/main.fc772987.js",
+    "static/media/horror.png": "/cinemagic/static/media/horror.0bc57e10adb9dacdbe58.png",
+    "static/media/amsterdam.png": "/cinemagic/static/media/amsterdam.8f83717b613183738dd7.png",
+    "static/media/blackadam.png": "/cinemagic/static/media/blackadam.9dd344647c8eac096881.png",
+    "static/media/blackpanther.png": "/cinemagic/static/media/blackpanther.92e587dcb57c020e50be.png",
+    "static/media/avatar.png": "/cinemagic/static/media/avatar.54d452fea531d640cfcd.png",
+    "static/media/404 error with portals-pana.svg": "/cinemagic/static/media/404 error with portals-pana.6423280edd58f6e841755c9ff00e1fc4.svg",
+    "static/media/favicon.ico": "/cinemagic/static/media/favicon.99388e8c9e310c3043d5.ico",
+    "index.html": "/cinemagic/index.html",
+    "main.316ddb3e.css.map": "/cinemagic/static/css/main.316ddb3e.css.map",
+    "main.fc772987.js.map": "/cinemagic/static/js/main.fc772987.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.316ddb3e.css",
+    "static/js/main.fc772987.js"
+  ]
+}
