@@ -12,6 +12,8 @@ export const cards = [
       id: "1",
       image: amsterdam,
       title: "Amsterdam",
+      text: 'Now playing',
+      button: 'Buy ticket',
     },
     {
       id: "2",

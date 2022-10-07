@@ -35,7 +35,6 @@
     cursor: pointer;
     z-index: 0;
     opacity: 0;
-  
     transition: 500ms;
   }
   
@@ -56,3 +55,5 @@
     transition: 500ms;
     opacity: 0.3;
   }
+
+  

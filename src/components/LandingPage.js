@@ -46,7 +46,8 @@ const LandingPage= () => {
               className={className}
               src={item.image}
               alt="movie"
-            ></img>
+            >  
+            </img>
             </>
             
           );
