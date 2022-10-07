@@ -7,6 +7,7 @@ import Popular from './Popular'
 
 
 
+
 const Movies = () => {
 
   const [movieType, setMovieType] = useState("popular");

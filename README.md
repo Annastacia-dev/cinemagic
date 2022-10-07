@@ -33,3 +33,11 @@ Cinemagic  displays a carousel of movies playing in cinema.
 
 # LIVELINK
 
+
+
+# ATTRIBUTIONS
+ MOVIES API -  https://www.themoviedb.org
+
+ LIKES AND COMMENTS API - https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270
+
+
