@@ -33,7 +33,7 @@ Cinemagic  displays a carousel of movies playing in cinema.
 
 # LIVELINK
 
-https://annastacia-dev.github.io/home
+https://annastacia-dev.github.io/cinemagic/
 
 
 
